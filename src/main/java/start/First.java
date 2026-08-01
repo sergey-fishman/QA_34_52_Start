@@ -64,7 +64,7 @@ public class First {
         System.out.println(divRoot1.getTagName());
         System.out.println(divRoot1.getAttribute("class"));
 
-        // по имени искать в целом не актуально, потому что имем много
+        // по имени искать в целом не актуально, потому что имен много
         WebElement divRoot2 =
                 driver.findElement(By.className("container"));
         System.out.println(divRoot2.getAttribute("id"));// -> root
@@ -84,7 +84,7 @@ public class First {
         pause(1000);
         WebElement linkSearch =
                 driver.findElement(By.cssSelector(".navigation-link"));
-        // поиск по классам, найдет первый попавшийся
+        // точка это поиск по классам, найдет первый попавшийся
         // a[class='navigation-link']
         // .navigation-link
         // *[class='navigation-link']
