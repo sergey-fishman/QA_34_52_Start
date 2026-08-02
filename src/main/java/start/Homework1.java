@@ -118,9 +118,12 @@ public class Homework1 {
         WebElement linkRome =
                 driver.findElement(By.cssSelector("app-footer a[href*='Rome']"));
         linkRome.click();
-        pause(5000);
+        pause(2000);
 
-        // rome -> berlin при использовании implicitlyWait() виснет без причины
+        driver.navigate().refresh();
+        pause(2000);
+
+        // rome -> berlin без рефреша виснет пока не подвину курсором
         WebElement linkBerlin =
                 driver.findElement(By.partialLinkText("Berlin"));
         linkBerlin.click();
