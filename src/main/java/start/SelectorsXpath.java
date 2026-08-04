@@ -71,7 +71,7 @@ public class SelectorsXpath {
         inputFirstName.sendKeys("Sergey");
         pause(3000);
 /*
-WebElement el1 = driver.findElement(By.cssSelector
+        WebElement el1 = driver.findElement(By.cssSelector
                 ("[formcontrolname='firstName']"));
         WebElement el2 = driver.findElement(By.xpath
                 ("//*[@formcontrolname='firstName']"));
